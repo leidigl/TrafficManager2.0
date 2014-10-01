@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="8" height="8" tilewidth="21" tileheight="21">
+ <tileset firstgid="1" name="spritesheet" tilewidth="21" tileheight="21" spacing="1">
+  <image source="../images/spritesheet.png" width="440" height="440"/>
+  <tile id="29">
+   <properties>
+    <property name="Class" value="Car"/>
+    <property name="sheet" value="Car_Red"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="401" name="sprites" tilewidth="21" tileheight="21" spacing="1">
+  <image source="../images/sprites.png" width="439" height="439"/>
+  <tile id="0">
+   <properties>
+    <property name="Class" value="Direction"/>
+    <property name="sheet" value="Left"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Class" value="Direction"/>
+    <property name="sheet" value="Down"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Class" value="Direction"/>
+    <property name="sheet" value="Right"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="Class" value="Direction"/>
+    <property name="sheet" value="Up"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="Class" value="Car"/>
+    <property name="sheet" value="Yellow"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="Class" value="Car"/>
+    <property name="sheet" value="Red"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="Class" value="Car"/>
+    <property name="sheet" value="Blue"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Left"/>
+    <property name="sheet" value="Spawn_Yellow_Left"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Up"/>
+    <property name="sheet" value="Spawn_Yellow_Up"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Up"/>
+    <property name="sheet" value="Spawn_Blue_Up"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Up"/>
+    <property name="sheet" value="Spawn_Red_Up"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Down"/>
+    <property name="sheet" value="Spawn_Red_Down"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Down"/>
+    <property name="sheet" value="Spawn_Blue_Down"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Down"/>
+    <property name="sheet" value="Spawn_Yellow_Down"/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Right"/>
+    <property name="sheet" value="Spawn_Red_Right"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Right"/>
+    <property name="sheet" value="Spawn_Blue_Right"/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Right"/>
+    <property name="sheet" value="Spawn_Yellow_Right"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Left"/>
+    <property name="sheet" value="Spawn_Red_Left"/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="Class" value="Spawn"/>
+    <property name="direction" value="Left"/>
+    <property name="sheet" value="Spawn_Blue_Left"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="background" width="8" height="8">
+  <properties>
+   <property name="type" value="0"/>
+  </properties>
+  <data>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="12"/>
+   <tile gid="2"/>
+   <tile gid="12"/>
+   <tile gid="12"/>
+   <tile gid="2"/>
+   <tile gid="12"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="12"/>
+   <tile gid="2"/>
+   <tile gid="12"/>
+   <tile gid="12"/>
+   <tile gid="2"/>
+   <tile gid="12"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+   <tile gid="21"/>
+  </data>
+ </layer>
+ <objectgroup name="directions" width="8" height="8">
+  <properties>
+   <property name="collision" value="true"/>
+  </properties>
+  <object gid="401" x="42" y="63"/>
+  <object gid="401" x="105" y="63"/>
+  <object gid="401" x="105" y="126"/>
+  <object gid="401" x="42" y="126"/>
+ </objectgroup>
+ <objectgroup name="spawns" width="8" height="8">
+  <properties>
+   <property name="collision" value="true"/>
+  </properties>
+  <object gid="424" x="42" y="168"/>
+  <object gid="429" x="0" y="63"/>
+  <object gid="431" x="147" y="126"/>
+  <object gid="423" x="105" y="168"/>
+  <object gid="426" x="105" y="21"/>
+  <object gid="431" x="147" y="63"/>
+  <object gid="427" x="42" y="21"/>
+  <object gid="430" x="0" y="126"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,21 @@
+{
+	"Left":{"sx":0,"sy":0,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Down":{"sx":22,"sy":0,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Right":{"sx":44,"sy":0,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Up":{"sx":66,"sy":0,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Red_Left":{"sx":220,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Blue_Left":{"sx":242,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Yellow_Left":{"sx":0,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Red_Down":{"sx":88,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Blue_Down":{"sx":110,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Yellow_Down":{"sx":132,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Red_Right":{"sx":154,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Blue_Right":{"sx":176,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Yellow_Right":{"sx":198,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Red_Up":{"sx":66,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Blue_Up":{"sx":44,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Spawn_Yellow_Up":{"sx":22,"sy":22,"cols":1,"tilew":21,"frames":1,"tileh":21},
+	"Car_Red":{"sx":118,"sy":9,"cols":1,"tilew":5,"frames":1,"tileh":5},
+	"Car_Blue":{"sx":140,"sy":9,"cols":1,"tilew":5,"frames":1,"tileh":5},
+	"Car_Yellow":{"sx":96,"sy":9,"cols":1,"tilew":5,"frames":1,"tileh":5}
+}
