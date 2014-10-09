@@ -1,0 +1,13 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:leidigl/TrafficManager2.0.git"
+  },
+  "name": "TrafficManager2.0",
+  "author": "Linda Leidig",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.9.5",
+    "socket.io": "^1.1.0"
+  }
+}
