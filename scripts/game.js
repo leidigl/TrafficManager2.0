@@ -1,4 +1,4 @@
-window.addEventListener("load", function() {
+function startGame() {
 	var Q = window.Q = Quintus({development: true}).include("Scenes, Sprites, 2D, Input, Touch, UI, TMX, Audio, Anim");
 	Q.setup({
 		width: 320,
@@ -312,4 +312,4 @@ window.addEventListener("load", function() {
 	});
 	//console.log("loaded TMX");+
 
-});
+}

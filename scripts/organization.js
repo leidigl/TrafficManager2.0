@@ -1,5 +1,6 @@
 $(function () {
     $('#players p').click(onPlayerSelected);
+    $('#gamestart').click(startGame);
 });
 
 
@@ -16,24 +17,20 @@ function drawChart() {
     data.addColumn('string', 'ToolTip');
 
     data.addRows([
-        [
-            {v: 'Mike', f: 'Mike<div style="color:red; font-style:italic">President</div>'},
-            '',
-            'The President'
-        ],
-        [
-            {v: 'Jim', f: 'Jim<div style="color:red; font-style:italic">Vice President<div>'},
-            'Mike',
-            'VP'
-        ],
-        ['Alice', 'Mike', ''],
-        ['Bob', 'Jim', 'Bob Sponge'],
-        ['Carol', 'Bob', '']
+//        [
+//            {v: 'Mike', f: 'Mike<div style="color:red; font-style:italic">President</div>'},
+//            '',
+//            'The President'
+//        ],
+        ['Position 1','','This player will be the main coordinator in the game!'],
+        ['Position 2','Position 1',''],
+        ['Position 3', 'Position 2', ''],
+        ['Position 4', 'Position 1', ''],
+        ['Position 5', 'Position 3', '']
     ]);
 
     chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
 
-    //chart.addEventListener("select",test);
 
     google.visualization.events.addListener(chart, 'select', onPositionSelected);
 
