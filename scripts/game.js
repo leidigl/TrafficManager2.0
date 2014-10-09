@@ -1,4 +1,11 @@
-window.addEventListener("load", function() {
+	
+
+	var players = [];
+	var socket = io.connect('http://localhost:1337');
+	var UiPlayers = document.getElementById("players");
+
+ 
+
 	var Q = window.Q = Quintus({development: true}).include("Scenes, Sprites, 2D, Input, Touch, UI, TMX, Audio, Anim");
 	Q.setup({
 		width: 320,
@@ -298,6 +305,10 @@ window.addEventListener("load", function() {
 		}
 	});
 
+	socket.on('count', function (data) {
+      	UiPlayers.innerHTML = 'Players: ' + data['playerCount'];
+    });
+
 	//define scene
 	Q.scene("level", function(stage) {
 		Q.stageTMX("level_test.tmx", stage);
@@ -312,4 +323,3 @@ window.addEventListener("load", function() {
 	});
 	//console.log("loaded TMX");+
 
-});
