@@ -3,8 +3,16 @@
  * GET home page
  */
 
-exports.index = function(req, res) {
-  res.render('index', { title: 'TrafficManager2.0' });
+exports.main = function(req, res) {
+  res.render('main', { title: 'TrafficManager2.0' });
+};
+
+/*
+* GET orga page
+*/
+
+exports.orga = function(req, res) {
+	res.render('orga', { title: 'TrafficManager2.0' });
 };
 
 /*

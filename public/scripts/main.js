@@ -42,7 +42,7 @@ function handlePlayerLogin() {
   // Response from the Node.js server
   socket.on('confirmPlayer', function(data) {
     if(data.hasOwnProperty('name')) {
-      showInfo('The server says: Hi ' + data.name + "(ID="+ data.id +")");
+      showInfo('Hi ' + data.name + "!");
       playerID = data.id;
       hideForm();
 
@@ -97,7 +97,7 @@ function showPlayersPanel(players) {
       //initialize disconnection avoidance in app.js
       //socket.emit("changeWindow");
       //pass current playerID to new window
-      window.location = '/game?playerID='+window.playerID;
+      window.location = '/orga?playerID='+window.playerID;
 
     }
     count--;

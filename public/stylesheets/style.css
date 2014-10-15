@@ -17,6 +17,10 @@ form, #playersPanel {
   margin: 25px auto 0 auto;
 }
 
+#info{
+  text-align: center;
+}
+
 .input-append {
   text-align: center;
 }
@@ -24,6 +28,33 @@ form, #playersPanel {
 #counter {
   font-size: 50px;
   text-align: center;
+}
+
+#split {
+  overflow: hidden;
+}
+
+#players {
+  float: left;
+  width: 200px;
+  margin: 0 100px 0 100px;
+}
+
+#players ul li{
+  margin: 10px;
+}
+
+#players ul li button{
+  width: 100px;
+}
+
+.selected {
+  background-color: gray;
+}
+
+#chart {
+  float: left;
+  margin: 0 100px 0 500px;
 }
 
 .scaled {

@@ -1,5 +1,5 @@
 //get playerID from passed url
-var playerID = location.search.split('playerID=')[1]
+var playerID = location.search.split('playerID=')[1];
 
 //setup Quintus game engine
 var Q = window.Q = Quintus({development: true}).include("Scenes, Sprites, 2D, Input, Touch, UI, TMX, Audio, Anim");

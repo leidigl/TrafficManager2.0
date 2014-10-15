@@ -16,8 +16,9 @@ var express = require('express')
   app.use(express.static(path.join(__dirname, '/public')));
 
 
-app.get('/', routes.index);
+app.get('/', routes.main);
 app.get('/game', routes.game);
+app.get('/orga', routes.orga);
 
 http.listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
@@ -87,7 +88,6 @@ io.sockets.on('connection', function (socket) {
     var gameInitData = new Object();
     gameInitData.players = [];
     for(var i = 0; i < players.length; i++) {
-
       if(i%2==0){
         gameInitData.players.push({"id": players[i].id, "name":players[i].name, "role":"disponent"});
       }else{
@@ -95,6 +95,23 @@ io.sockets.on('connection', function (socket) {
       }
     }
     socket.broadcast.emit("gameInitData", gameInitData);
+  });
+
+  socket.on("orgaInit", function(){
+    var playersName = [];
+    for(var i = 0; i < players.length; i++) {
+      playersName.push({"id": players[i].id, "name":players[i].name});
+    }
+    io.sockets.emit('info', 
+            {'info':   'ready to orga',
+             'players': playersName}
+          );
+  });
+
+  socket.on("orgaDone", function(){
+    io.sockets.emit('info', 
+            {'info':   'ready to play'}
+          );
   });
 
   socket.on("directionChanged", function(data){
